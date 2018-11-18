@@ -107,7 +107,7 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(ayarlar.token);
+client.login(procces.env.BOT_TOKEN);
 
 client.on('message', msg => {
 if (msg.content.toLowerCase() === prefix + "sigara") {
